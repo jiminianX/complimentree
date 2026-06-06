@@ -1,0 +1,80 @@
+{
+  "name": "ExistingTrees",
+  "type": "object",
+  "properties": {
+    "tree_id": {
+      "type": "string",
+      "description": "Unique tree identifier"
+    },
+    "address": {
+      "type": "string"
+    },
+    "neighborhood": {
+      "type": "string"
+    },
+    "borough": {
+      "type": "string"
+    },
+    "community_district": {
+      "type": "string"
+    },
+    "latitude": {
+      "type": "number"
+    },
+    "longitude": {
+      "type": "number"
+    },
+    "species": {
+      "type": "string"
+    },
+    "dbh_in": {
+      "type": "number",
+      "description": "Trunk diameter in inches (size/age proxy)"
+    },
+    "condition": {
+      "type": "string",
+      "description": "Good / Fair / Poor / Critical"
+    },
+    "mortality_risk_5yr_pct": {
+      "type": "number",
+      "description": "Predicted probability of death within 5 years (%)"
+    },
+    "canopy_contribution_sqft": {
+      "type": "number"
+    },
+    "annual_benefit_at_risk_usd": {
+      "type": "number"
+    },
+    "risk_factors": {
+      "type": "string"
+    },
+    "safety_risk": {
+      "type": "string",
+      "description": "High / Medium / Low"
+    },
+    "near_sensitive_site": {
+      "type": "string"
+    },
+    "recommended_action": {
+      "type": "string"
+    },
+    "last_pruned_year": {
+      "type": "number"
+    },
+    "last_inspection_year": {
+      "type": "number"
+    },
+    "heat_vulnerability_index": {
+      "type": "number",
+      "description": "1\u20135; 5 = most vulnerable"
+    },
+    "maintenance_priority_score": {
+      "type": "number",
+      "description": "Reference score only"
+    }
+  },
+  "required": [
+    "tree_id",
+    "address"
+  ]
+}

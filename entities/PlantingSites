@@ -1,0 +1,92 @@
+{
+  "name": "PlantingSites",
+  "type": "object",
+  "properties": {
+    "site_id": {
+      "type": "string",
+      "description": "Unique site identifier"
+    },
+    "address": {
+      "type": "string"
+    },
+    "neighborhood": {
+      "type": "string"
+    },
+    "borough": {
+      "type": "string"
+    },
+    "community_district": {
+      "type": "string"
+    },
+    "latitude": {
+      "type": "number"
+    },
+    "longitude": {
+      "type": "number"
+    },
+    "surface_temp_anomaly_f": {
+      "type": "number",
+      "description": "\u00b0F above borough median land-surface temp"
+    },
+    "area_canopy_pct": {
+      "type": "number",
+      "description": "Current canopy % around the site"
+    },
+    "heat_vulnerability_index": {
+      "type": "number",
+      "description": "1\u20135; 5 = most vulnerable"
+    },
+    "near_sensitive_site": {
+      "type": "string",
+      "description": "e.g. school, senior center, or None"
+    },
+    "site_status": {
+      "type": "string",
+      "description": "Plantable or Needs space creation"
+    },
+    "recommended_species": {
+      "type": "string"
+    },
+    "est_survival_5yr_pct": {
+      "type": "number"
+    },
+    "annual_co2_seq_lbs": {
+      "type": "number"
+    },
+    "annual_stormwater_gal": {
+      "type": "number"
+    },
+    "annual_air_quality_value_usd": {
+      "type": "number"
+    },
+    "annual_energy_savings_usd": {
+      "type": "number"
+    },
+    "total_annual_benefit_usd": {
+      "type": "number"
+    },
+    "planting_cost_usd": {
+      "type": "number"
+    },
+    "neighborhood_current_canopy_pct": {
+      "type": "number"
+    },
+    "neighborhood_canopy_goal_pct": {
+      "type": "number"
+    },
+    "last_nearby_planting_year": {
+      "type": "number"
+    },
+    "planner_notes": {
+      "type": "string"
+    },
+    "default_priority_score": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "site_id",
+    "address"
+  ]
+}
+ 
